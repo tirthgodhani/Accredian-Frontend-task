@@ -139,7 +139,7 @@ const Signup = ({ onSuccess }) => {
 
             <Box sx={{ mt: 2, textAlign: 'center' }}>
               <Typography variant="body2">
-                Already have an account?{' '}
+                Already have an acount?{' '}
                 <Link href="/login" underline="hover">
                   Login
                 </Link>
