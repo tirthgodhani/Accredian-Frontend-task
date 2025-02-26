@@ -45,7 +45,7 @@ const Signup = ({ onSuccess }) => {
     validationSchema: validationSchema,
     onSubmit: async (values) => {
       try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/auth/register`, {
+        const response = await axios.post('https://accredian-backend-task-ozmi.onrender.com/api/auth/register', {
           username: values.username,
           email: values.email,
           password: values.password
