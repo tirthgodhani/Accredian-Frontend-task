@@ -51,7 +51,7 @@ const Login = ({ onSuccess }) => {
       setIsLoading(true);
       setError('');
       try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/auth/login`, values);
+        const response = await axios.post('https://accredian-backend-task-ozmi.onrender.com/api/auth/login', values);
         if (response.data.success) {
           localStorage.setItem('token', response.data.data.token);
           localStorage.setItem('user', JSON.stringify(response.data.data.user));
